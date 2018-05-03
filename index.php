@@ -6,23 +6,18 @@
 </head>
 
 <body>
-<?php
-$KCGPU = 10; //index spotřebitelů
-$KCCPU = 10; //index spotřebitelů
-$KCRAM = 16; //GB
-$KCHDD = 40; //GB
-$myGPU = 7;
-$myCPU = 7;
-$myRAM = 8; //GB
-$myHDD = 520; //GB
 
-    if (($KCGPU<=$myGPU) && ($KCCPU<=$myCPU) && ($KCRAM<=$myRAM) && ($KCHDD<=$myHDD)){
-    echo "Užij si hru";
-    }
-    else {
-    echo "Máš smůlu, zahrej si jiný RPG";
-    }
-?>
+<form class="" action="submit.php" method="post">
+Grafika:  <input type="number" name="myGPU" value="" max="10"> <br>
+CPU:      <input type="number" name="myCPU" value="" max="10"> <br>
+RAM:      <input type="number" name="myRAM" value="" max="16"> <br>
+HDD:      <input type="number" name="myHDD" value="" max="4000"> <br>
+</br> Hra: <input type="text" > <br>
+<input type="submit" name="Accept">
+</form>
+  </body>
+</html>
 </body>
+
 
 </html>
